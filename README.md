@@ -18,17 +18,22 @@ Here is Nextjs [documentation](https://nextjs.org/docs/pages/building-your-appli
 - Filter using **.only** and **.skip**
 - Group tests using **describe(name,fun)**
 - Use **it** as an alternative to test method, (xit,fit=,test.skip,test.only)
+- Coverage [config](https://jestjs.io/docs/configuration) & [Assertions](https://jestjs.io/docs/using-matchers)
 
 ## Installation
-
-###### shell command
 
 ```shell
 npm install
 
 npm run dev
+```
 
+###### shell command
+
+```shell
 npm run test
+
+npm run coverage
 ```
 
 ## Screenshots
