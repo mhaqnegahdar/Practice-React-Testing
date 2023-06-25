@@ -15,6 +15,9 @@ Here is Nextjs [documentation](https://nextjs.org/docs/pages/building-your-appli
 
 - Automated testing
 - TDD test
+- Filter using **.only** and **.skip**
+- Group tests using **describe(name,fun)**
+- Use **it** as an alternative to test method, (xit,fit=,test.skip,test.only)
 
 ## Installation
 

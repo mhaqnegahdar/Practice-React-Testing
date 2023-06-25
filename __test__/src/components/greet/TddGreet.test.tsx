@@ -5,18 +5,20 @@ import "@testing-library/jest-dom";
 
 //Greet should render the thext Hello and if a name is passed it shold render hello followed by the name
 
-test("TddGreet renders successfully", () => {
-  render(<TddGreet />);
+describe("TDD Greet", () => {
+  test("TddGreet renders successfully", () => {
+    render(<TddGreet />);
 
-  const textElement = screen.getByText("Hello");
+    const textElement = screen.getByText("Hello");
 
-  expect(textElement).toBeInTheDocument();
-});
+    expect(textElement).toBeInTheDocument();
+  });
 
-test("TddGreet renders successfully with a name", () => {
-  render(<TddGreet name="Mohamad" />);
+  test("TddGreet renders successfully with a name", () => {
+    render(<TddGreet name="Mohamad" />);
 
-  const textElement = screen.getByText("Hello Mohamad");
+    const textElement = screen.getByText("Hello Mohamad");
 
-  expect(textElement).toBeInTheDocument();
+    expect(textElement).toBeInTheDocument();
+  });
 });
