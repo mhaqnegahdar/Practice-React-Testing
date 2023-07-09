@@ -38,6 +38,12 @@ describe("Application", () => {
     const image = screen.getByAltText("a person with a laptop");
     expect(image).toBeInTheDocument();
 
+    // Check Image is rendered Regex and exact false
+    const imageRegex = screen.getByAltText(/a person with a/i, {
+      exact: false,
+    });
+    expect(imageRegex).toBeInTheDocument();
+
     // Check Image is rendered
     const close = screen.getByTitle("close");
     expect(close).toBeInTheDocument();
