@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, logRoles } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Skills from "@/components/skills/Skills";
 
@@ -44,8 +44,11 @@ describe("Skills", () => {
   });
 
   test("Learning Button renders after 1001ms", async () => {
-    render(<Skills skills={skills} />);
+    const view = render(<Skills skills={skills} />);
 
+    logRoles(view.container);
+
+    // screen.debug();
     const learningButton = await screen.findByRole(
       "button",
       {
@@ -55,6 +58,7 @@ describe("Skills", () => {
         timeout: 2000,
       }
     );
+    // screen.debug();
 
     expect(learningButton).toBeInTheDocument();
   });
