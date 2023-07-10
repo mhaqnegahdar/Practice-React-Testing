@@ -5,3 +5,7 @@ export type TddGreetProps = {
 export type SkillsProps = {
   skills: string[];
 };
+
+export type UseCounterProps = {
+  initialCount?: number;
+};
