@@ -12,6 +12,7 @@ const config = {
   // setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
 
   testEnvironment: "jest-environment-jsdom",
+  setupFilesAfterEnv: ["./jest.setup.ts"],
   coverageThreshold: {
     global: {
       branches: 80,

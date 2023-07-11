@@ -9,3 +9,9 @@ export type SkillsProps = {
 export type UseCounterProps = {
   initialCount?: number;
 };
+
+export type CounterTwoProps = {
+  count: number;
+  handleIncrement?: () => void;
+  handleDecrement?: () => void;
+};
